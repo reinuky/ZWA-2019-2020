@@ -23,10 +23,10 @@ php files:
   homepage.php - main page of project, different content shown for not logged-in, logged-in and admin
     not logged-in only sees a notice to log in and a link     
     logged-in users see discount fliers on the sides with their specific shopping list and a box for adding items, can also see contact
-    admin sees all items in userdata.json + the ID's of the users who added said items
+    admin sees fliers, all items in userdata.json + the ID's of the users who added said items
   login.php - login page, uses functions in users.php for username/password validation
   logout.php - removes session to log out of page
   users.php - static array of users with hashed passwords, includes functions to get users by username and ID
   
 userdata.json:
-  json encoded file functioning as a sort of database for the project, all items get added into the array together with the user's ID and   a unique ID for item removal
+  json encoded file functioning as a sort of database for the project, all items get added into the array together with the user's ID and a unique ID for item removal
