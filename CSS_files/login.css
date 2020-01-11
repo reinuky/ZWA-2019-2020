@@ -49,8 +49,8 @@ img{
     font-size: 17px;
 }
 .topnav a:hover{
-    background-color: #4CAF50;
-    color: whitesmoke;
+    background-color: whitesmoke;
+    color: black;
 }
 .topnav a.active{
     background-color: #4CAF50;
