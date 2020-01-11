@@ -20,7 +20,7 @@
             header("Location: homepage.php");
         }
         else{
-            $error = "Adding failed, item name too long.";
+            $error = "Adding failed, item name too long.(max length is 40)";
         }
         
     }
@@ -121,7 +121,6 @@
             // shopping list
             echo "<div id='main_table'>";
             echo "<h1>";
-            echo "<form method='post'>";
             echo "<table class='center'>";
             echo "<thead>";
             echo "<th id='item_name_label'>Item Name</th>";
@@ -133,10 +132,10 @@
 
                     echo "<tr>";
                     echo "<td>$item_name</td>";
-                    echo "<td><input type='submit' value='Remove' name='delete'><input type='hidden' value='";
-                    echo htmlspecialchars($item['item']);
+                    echo "<td><form method='post'><input type='submit' value='Remove' name='delete'><input type='hidden' value='";
+                    echo $item_name;
                     echo "' name='hidden'>";
-                    echo "<input type=hidden value='";
+                    echo "<input type='hidden' value='";
                     echo $id_of_item;
                     echo "' name='id_of_item'>";
                     echo "</form></td>";
